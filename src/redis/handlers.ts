@@ -177,7 +177,7 @@ export async function handleOTP(message: string): Promise<void> {
 
     await transporter.sendMail(mailOptions);
     logger.info(
-      `Mail sent successfully to ${email} for welcome email notification.`,
+      `Mail sent successfully to ${email} for otp email notification.`,
     );
   } catch (error) {
     logger.error(
